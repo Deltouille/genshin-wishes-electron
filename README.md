@@ -1,0 +1,2 @@
+# genshin-wishes-electron
+ 
