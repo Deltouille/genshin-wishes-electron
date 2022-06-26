@@ -1,0 +1,67 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="./contents/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./contents/css/main.css">
+    <link href="./output.css" rel ="stylesheet">
+    <title>Hello World!</title>
+  </head>
+  <body class="bg-indigo-900">
+    <main class="flex">
+      <div class="flex flex-col justify-between w-1/6 h-screen bg-fgo-darkblue3 fixed xs:hidden shadow-lg sm:hidden lg:block">
+        <header class="py-4">
+          <p class="text-3xl text-white uppercase" align="center">FGO MANAGER</p>
+        </header>
+        <nav class="">
+          <ul>
+            <li class="mt-3 hover:bg-gray-700 text-white text-2xl uppercase" align="center"><a href="{{ path('profil_utilisateur') }}">Mon Profil</a></li>
+            <li class="mt-3 hover:bg-gray-700 text-white text-2xl uppercase" align="center"><a href="{{ path('servantCollection') }}">Mes Servants</a></li>
+            <li class="mt-3 hover:bg-gray-700 text-white text-2xl uppercase" align="center"><a href="{{ path('craftEssenceCollection') }}">Mes Crafts Essences</a></li>
+            <li class="mt-3 hover:bg-gray-700 text-white text-2xl uppercase" align="center"><a href="{{ path('historique') }}">Historique d'invocation</a></li>
+            <li class="mt-3 hover:bg-gray-700 text-white text-2xl uppercase" align="center"><a href="{{ path('planificateur') }}">Planification</a></li>
+            <li class="mt-3 hover:bg-gray-700 text-white text-2xl uppercase" align="center"><a href="{{ path('ressourcesCollection') }}">Mes Ressources</a></li>
+            <hr>
+          </ul>
+        </nav>
+        <footer class="mt-aut py-4">
+          <p style="color: white;" align="Center"><a href="https://github.com/Deltouille/fgostatsfr">Github du projet</a></p>
+        </footer>
+      </div>
+      <div class="lg:w-1/6"></div>
+      <div class="flex flex-col justify-between w-full lg:w-5/6 ">
+
+        <section class="bg-fgo-darkblue2" id="content-body">
+        </section>
+        <footer class="mt-auto bg-fgo-darkblue">
+
+        </footer>
+      </div>
+    </main>
+  </body>
+  <!--<body class="bg-indigo-600">
+    <div class="sidebar">
+        <a href="#about">Mes Voeux</a>
+        <a href="#about">Importer</a>
+        <a href="#about">Statistiques</a>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+            <h1 class="text-warning">
+                Genshin Wishes
+            </h1>
+        </div>
+      </div>
+    </div>-->
+
+    <!-- Vous pouvez également requérir que d’autres fichiers s’exécutent dans ce processus -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
+
+
